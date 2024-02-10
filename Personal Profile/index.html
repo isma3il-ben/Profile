@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/image.jpg">
+    <title>Isma3il.Ben</title>
+</head>
+
+<body>
+
+
+
+    <h5 class="seprator-1">👨‍💻丨Isma3il Ben Merabet</h5>
+
+
+
+    <div class="about">
+        <img src="assets/image.jpg">
+        <div class="info">
+            <h3>About Me</h3>
+            <p class="about-text"  >
+              Hello, I am a web developer and JavaScript programmer specializing in crafting dynamic websites with unique designs. I have extensive experience in developing Discord bots using JavaScript. My focus is on achieving the perfect balance between technical performance and user-friendly design. I strive to meet client needs by delivering unique and innovative technical solutions. Whether you're looking for advanced website development or creative Discord bot solutions, I am here to transform your ideas into a digital reality that stands out.
+            </p>
+            <button class="hire-btn"><a href="./contact_me.html">Contact me</a><i class='bx bxl-gmail' ></i></button>
+            <button class="hire-btn" ><a href="https://www.instagram.com/isma3il.ben" target="_blank">Instagram</a> <i class='bx bxl-instagram'></i> </button>
+            <button class="hire-btn" ><a href="https://github.com/isma3il-ben" target="_blank">Github</a> <i class='bx bxl-github' ></i></button>
+            <button class="hire-btn"><a href="https://discord.gg/FaHNx9RB6W" target="_blank">Discord</a><i class='bx bxl-discord-alt' ></i></button>
+            <button class="hire-btn" ><a href="https://twitter.com/isma33il_ben" target="_blank">Twiter</a> <i class='bx bxl-twitter' ></i></button>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <h5 class="seprator">My Skills</h5>
+
+
+    <div class="skills">
+        <div class="left">
+            <div class="info">
+                <h3>What My Programming Skills Included?</h3>
+                <p class="about-text"  >
+                    I develop simple, intuitive and responsive user interface that helps users get things done with less
+                    effort and time with those technologies.
+                </p>
+            </div>       
+         </div>
+
+        <div class="right">
+            <div class="item">
+                <i class='bx bxl-html5 bx-tada'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-css3 bx-tada'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-bootstrap bx-tada'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-php bx-tada'></i>
+            </div>
+            <div class="item" >
+                <i class='bx bxl-postgresql bx-tada'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-mongodb bx-tada'></i>
+            </div>
+            <div class="item">
+                <i class='bx bxl-javascript bx-tada'></i>
+            </div>
+  
+
+            
+            <div class="item">
+                <i class='bx bxl-python bx-tada'></i>
+            </div>
+            
+            <div class="item">
+                <i class='bx bxl-adobe bx-tada'></i>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="guarantee">
+        <div class="item">
+            <div class="icon">
+                <i class='bx bx-check-shield'></i>
+            </div>
+            <div class="info">
+                <h3>+1</h3>
+                <p>Years Of Experiences</p>
+            </div>
+            <i class='bx bx-history' ></i>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <i class='bx bx-check-circle'></i>
+            </div>
+            <div class="info">
+                <h3>+10</h3>
+                <p>Completed Projects</p>
+            </div>
+            <i class='bx bx-link-external' ></i>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <i class='bx bx-laugh'></i>
+            </div>
+            <div class="info">
+                <h3>-0</h3>
+                <p>Happy Clients</p>
+            </div>
+            <i class='bx bxs-purchase-tag' ></i>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        Copyright © 2024 👨‍💻丨Isma3il.Ben,All rights reserved.
+    </footer>
+
+
+
+
+    <script>
+const nameElement = document.querySelector('.about-text');
+const originalText = nameElement.innerText;
+let currentIndex = 0;
+let isDeleting = false;
+
+setInterval(() => {
+  let newText;
+
+  if (isDeleting) {
+    newText = originalText.substring(0, currentIndex);
+    currentIndex--;
+
+    if (currentIndex < 0) {
+      isDeleting = false;
+    }
+  } else {
+    newText = originalText.substring(0, currentIndex + 1);
+    currentIndex++;
+
+    if (currentIndex === originalText.length) {
+      // إيقاف عملية الحذف بعد الوصول إلى نهاية النص
+      isDeleting = false;
+    }
+  }
+
+  nameElement.innerText = newText;
+}, 50);
+      </script>
+
+</body>
+
+</html>

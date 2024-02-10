@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="icon" href="./assets/image.jpg">
+  <title>Isma3il.Ben|Conatct</title>
+</head>
+<body>
+
+
+  <nav>
+    <div class="logo">
+    <a href="./index.html">Back To PageHome</a>
+    </div>
+  </nav>
+
+
+
+ 
+
+  <section>
+    <form action="#" method="post" onsubmit="submitForm(); return false;"> 
+  <header>
+    <h1 class="name" >Message Me</h1>
+  </header>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="discord">Discord Uesrname:</label>
+      <input type="text" id="discord" name="discord" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea class="s" id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Click To Sent</button>
+      
+    </form>
+  </section>
+
+
+
+
+
+<footer>
+  Copyright © 2024 👨‍💻丨Isma3il.Ben,All rights reserved.
+</footer>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("9bbF3lza_dd7BvSNJ");
+
+    function submitForm() {
+      var formData = {
+        name: document.getElementById('name').value,
+        discord: document.getElementById('discord').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+        
+      };
+
+      emailjs.send("service_l1oti8i", "template_01mika3", formData)
+        .then(function(response) {
+          console.log("Email sent successfully", response);
+          alert("Message sent successfully!");
+        }, function(error) {
+          console.error("Failed to send email", error);
+          alert("Failed to send message. Please try again.");
+        });
+    }
+  </script>
+
+
+
+</body>
+</html>

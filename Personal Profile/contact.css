@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*-------------------*/
+body {
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+/*----------Nav Bar---------*/
+nav {
+  margin: 25px 50px 30px;
+  padding: 0px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #587b8b;
+  border-radius: 20px;
+  font-size: 1.1em;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo a {
+  font-size: 1.3em;
+  color: rgb(248, 248, 248);
+  text-decoration: none;
+  padding: 9px;
+  margin: 0px;
+  border-radius: 5px;
+}
+
+.logo a:hover {
+  color: #587b8b;
+}
+
+
+
+.nav-list {
+  list-style: none;
+  display: none; 
+}
+
+.nav-item {
+  font-size: 1.3em;
+  color: rgb(248, 248, 248);
+  text-decoration: none;
+  margin: 15px;
+}
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.05em;
+}
+
+.nav-item a:hover {
+  color: #fddd68;
+}
+
+/*------------------------------------------*/
+
+header {
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+ 
+
+}
+
+/*------------------------------------------*/
+
+section {
+  margin: 20px;
+  margin-top: 4%;
+  height: 90vh;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px  5px 1px #587b8b;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 100%;
+  min-width: 100%;
+ 
+  box-sizing: border-box;
+  background-color: #587b8b;
+  color: white;
+}
+.s{
+   min-height: 40px;
+   max-height: 200px;
+}
+
+button {
+  background-color: #2b2b2b;
+  box-shadow: 0px 0px  10px 1px #587b8b;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.7s;
+}
+button:hover{
+  color: #587b8b;
+  transform: scale(1.05);
+}
+
+
+
+/*------------------------------------------*/
+
+
+footer{
+  font-size: 0.9em;
+  background-color: #2b2b2b;
+  color: #fdfcf8;
+  text-align: center;
+  padding: 5px;
+  bottom: 0;
+  width: 100%
+}
+
+/*-----------Stitting Nav --------*/ 
+
+@media only screen and (max-width: 600px) {
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-item {
+    display: inline;
+    list-style: decimal;
+    margin: 4px;
+    padding: 9px 50px;
+    font-size: 0.9em;
+    list-style: inside;
+  }
+  
+  
+  
+  footer{
+    top: 146vh;
+  }
+  
+  section{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 90%;
+   
+  }
+  form{
+    max-width: 420px;
+
+    
+  }
+  }
+  .s{
+    max-width: 250px;
+  }
+  button{
+    font-size: 0.9em;
+  }
+  
+/*---------------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------Scrol-------------------------------------------*/
+/* شكل شريط التمرير */
+::-webkit-scrollbar {
+  width: 12px; /* عرض شريط التمرير */
+}
+
+/* شكل المقدمة والتلميح في شريط التمرير */
+::-webkit-scrollbar-track {
+  background-color: #2e3f46 ; /* لون الخلفية للمقدمة والتلميح */
+}
+
+/* شكل العروة (الشريط نفسه) في شريط التمرير */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(101, 158, 196); /* لون العروة */
+  border-radius: 2px; /* شكل حواف العروة */
+}
+
+/* شكل العروة عند التحريك */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(101, 158, 196); /* لون العروة عند التحريك عليها */
+}
+/*------------------------------------------*/

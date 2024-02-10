@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    color: #587b8b;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: #1a1a1a;
+    
+}
+
+/*--------------------------------------------About Me-------------------------------------------*/
+.seprator{
+    margin: 50px 50px 30px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.seprator-1{
+    margin: 25px 50px 30px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+} 
+
+.about{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 80px;
+    padding: 0 50px;
+    
+}
+
+.about img{
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px  #505f6493 ;
+}
+
+.about .info h3{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+.about .info p{
+    font-size: 14px;
+}
+.about-text{
+    
+    background-color: #2b2b2b;
+    color: #ffffff;
+    padding: 25px 25px;
+    border-radius: 15px;
+    margin: 2px;
+    box-shadow: 0px 0px  10px 1px #587b8b;
+}
+
+
+.about .info button{
+    margin-top: 30px;
+}
+
+.hire-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #587b8b;
+    padding: 6px 10px;
+    margin: 5px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.hire-btn:hover{
+    background: #505f64;
+}
+.hire-btn a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.hire-btn i{
+    font-size: 1.3em;
+   margin: 0px 0px 0px 10px ;
+   color: #ffffff;
+}
+
+
+
+
+/*-------------------------------------------------------My Skills---------------------------------------------*/
+
+
+
+
+
+.skills{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+    
+}
+
+.skills .left{
+    width: 680px;
+}
+
+.skills .left .info h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+
+}
+
+.skills .left .info p{
+    font-size: 14px;
+}
+
+.skills .left button{
+    margin-top: 30px;
+}
+
+.skills .right{
+    width: 420px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills .right .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #505f64;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    color: #ffffff;
+}
+.skills .right .item:hover{
+    transform: scale(1.3);
+}
+
+.item i{
+    font-size: 34px;
+    transition: transform 0.5s;
+    color: #ffffff;
+    animation: glow 0.5s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 5px #587b8b, 0 0 2px #587b8b, 0 0 4px #587b8b;
+    }
+    to {
+      text-shadow: 0 0 5px #1b1b1b, 0 0 2px #181a18, 0 0 4px #181616;
+    }
+  }
+.skills .right .item i:hover{
+    color: #587b8b;
+    transform: scale(1.5);
+    
+    
+}
+
+
+/*-----------------------------------------------------------My Experiences-----------------------------------------*/
+
+
+.guarantee{
+    margin-top: 50px;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    
+}
+.guarantee .item{
+    background: #292b2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.guarantee .item:hover{
+    border-color: #505f64;
+}
+
+.guarantee .item .icon{
+    width: 46px;
+    height: 46px;
+    background: #505f64;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.guarantee .item:hover .icon{
+    background-color: #587b8b;
+}
+
+.guarantee .item .icon i{
+    font-size: 30px;
+}
+
+.guarantee .item .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guarantee .item .info h3{
+    font-size: 28px;
+}
+
+.guarantee .item .info p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.guarantee .item > i{
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.guarantee .item:hover > i{
+    color: #587b8b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------Footer------------------------------------------*/
+
+
+
+footer{
+    position: relative;
+    background: #2b2b2b;
+    color: #ccc;
+    margin-top: 100px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .guarantee{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .guarantee .item{
+        flex-basis: 49%;
+    }
+
+    .skills{
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .skills .left{
+        width: 500px;
+    }
+
+    .skills .left .info h3{
+        font-size: 22px;
+    }
+
+    .skills .left .info p{
+        font-size: 12px;
+    }
+
+    footer{
+        margin-top: 150px;
+    }
+
+    footer .start{
+        width: 90%;
+        left: 5%;
+        top: -20%;
+    }
+
+    footer .cols{
+        flex-wrap: wrap;
+    }
+
+    footer .cols .about-col{
+        flex-basis: 50%;
+    }
+
+    footer .cols .links-col{
+        flex-basis: 50%;
+    }
+
+    footer .cols .news-col{
+        flex-basis: 50%;
+    }
+
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+
+
+
+@media screen and (max-width: 780px) {
+    
+    .navbar button{
+        display: none;
+    }
+
+    .main h4{
+        font-size: 24px;
+    }
+
+    .main p.title{
+        font-size: 36px;
+    }
+
+    .main p.subtitle{
+        font-size: 14px;
+    }
+
+    .guarantee .item{
+        flex-basis: 100%;
+    }
+
+    .about{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+
+
+
+@media screen and (max-width: 650px) {
+    
+    .about{
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+       
+    }
+    .info button{
+        background: #587b8b;
+        padding: 6px 10px;
+        margin: 2px;
+    }
+    
+    
+    
+    .about img{
+     display: none;
+    }
+    
+    
+    .seprator-1{
+        font-size: 1.0em;
+    }
+    
+    
+    .navbar{
+        justify-content: center;
+    }
+   
+   
+    .right{
+        margin: 25px;
+    }
+
+    .skills{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills .right{
+        justify-content: center;
+    }
+
+    .skills .left .info h3{
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 480px) {
+    
+    .guarantee .item .info h3{
+        font-size: 20px;
+    }
+
+    .guarantee .item .info p{
+        font-size: 12px;
+    }
+
+}
+
+
+/*--------------------------------------------Scrol------------------------------------------*/
+
+
+/* شكل شريط التمرير */
+::-webkit-scrollbar {
+    width: 12px; /* عرض شريط التمرير */
+  }
+  
+  /* شكل المقدمة والتلميح في شريط التمرير */
+  ::-webkit-scrollbar-track {
+    background-color: #2e3f46 ; /* لون الخلفية للمقدمة والتلميح */
+  }
+  
+  /* شكل العروة (الشريط نفسه) في شريط التمرير */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(101, 158, 196); /* لون العروة */
+    border-radius: 2px; /* شكل حواف العروة */
+  }
+  
+  /* شكل العروة عند التحريك */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(101, 158, 196); /* لون العروة عند التحريك عليها */
+  }
+
+
+
+
+
+
+
+/*--------------------------------------------[ End Of Project:) ]------------------------------------------*/
+
+  
